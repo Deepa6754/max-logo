@@ -1,0 +1,50 @@
+<html>
+<script>
+function drowPic()
+{
+var c=document.getElementById("t");
+var ctx=c.getContext("2d");
+ctx.lineWidth="60";
+ctx.beginPath();
+ctx.strokeStyle="black";
+ctx.moveTo(400,150);
+ctx.lineTo(550,320);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="black";
+ctx.moveTo(350,210);
+ctx.lineTo(490,370);
+ctx.stroke();
+
+
+ctx.beginPath();
+ctx.strokeStyle="black";
+ctx.moveTo(300,270);
+ctx.lineTo(400,390);
+ctx.stroke();
+
+
+ctx.lineWidth="120";
+ctx.beginPath();
+ctx.strokeStyle="white";
+ctx.moveTo(30,360);
+ctx.lineTo(800,360);
+ctx.stroke();
+
+ctx.lineWidth="12";
+ctx.beginPath();
+ctx.strokeStyle="black";
+ctx.font="8em Arial";
+ctx.strokeText("adidas",240,400);
+ctx.stroke();
+ctx.fillStyle="blsck";
+ctx.fill();
+}
+</script>
+<body onload="drowPic();" bgcolor="black"><center>
+<font size="+5" color="red">adidas</font><br>
+<canvas id="t" height="550" width="800" style="background-color:white;"></canvas>
+</center>
+</body>
+</html>
